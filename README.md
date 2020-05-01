@@ -10,17 +10,18 @@ Voici à quoi ressemble l'architecture de l'application
 
 ## 1 : Git
 ### 1.0 : Forker le repo du lab
-Suivre le lien présent au tableau pour forker ce repository dans votre repository personnel GitHub Classroom.
+Forker ce repository dans votre repository personnel.
 
 ### 1.1 : Cloner le repository
 Clonez le repo nouvellement copié sur votre ordinateur 
-> A partir de maintenant, **vous ne travaillerez plus que dans votre copie**. Vous n'avez plus à revenir sur [le projet parent](https://github.com/cours-ece/lab-cloud).
+> A partir de maintenant, **vous ne travaillerez plus que dans votre copie**. Vous n'avez plus à revenir sur [le projet parent](https://github.com/laurentgrangeau/lab-cloud).
  
 ### 1.2 : Créer une issue
 > ⚠️  **WARNING**: Créez une issue s'intitulant `1.2` ayant pour contenu les commandes que vous avez effectuées pour réaliser le clone de votre repo git.
 
 ## 2 : IaaS
 Dans un premier temps, nous allons déployer cette architecture sur une machine virtuelle.
+> ⚠️  **WARNING**: Attention, toutes les commandes sont à réaliser dans un environnement type bash comme le terminal de MacOS, MINGW ou Git Bash
 
 ### 2.0 : Télécharger et installer la CLI d'Azure
 https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
@@ -30,7 +31,8 @@ Pour se connecter, lancer la commande suivante
 ```bash
 az login --service-principal -u http://<login> -p <password> --tenant c8709a2a-70b6-49b5-bdd5-6868b476da85
 ```
-Ou ```<login>``` est votre ID étudiant et le ```<password>``` correspondant
+Ou ```<login>``` est votre ID étudiant et le ```<password>``` correspondant.
+Ces ```<login>``` et ```<password>``` se trouve dans le fichier ```password.txt```
 
 ### 2.2 : Créer une machine virtuelle Azure
 Lancer la commande suivante
