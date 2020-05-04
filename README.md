@@ -72,7 +72,7 @@ Executer la commande suivante afin de récupérer le nom de la machine virtuelle
 ```bash
 az vm list --query "[0].name"
 ```
-Ensuite, ouvrir le firewall
+Ensuite, ouvrir le firewall sur le port d'écoute de l'application. Le port est spécifié dans les logs de l'application (port 8080)
 ```bash
 az vm open-port --resource-group <resourcegroup> --name <vm-name> --port <port>
 ```
@@ -86,7 +86,7 @@ Installer ensuite MySQL sur le serveur
 > ⚠️  **WARNING**: Créez une issue s'intitulant `2.10` ayant pour contenu les commandes que vous avez effectuées
 
 ### 2.11 : Installer les schémas et les données
-Dans le repo git, il existe les instructions afin de créer la base de données PetClinic
+Dans le repo git, il existe les instructions afin de créer la base de données PetClinic. Ces instruction se trouve ici : https://github.com/spring-projects/spring-petclinic/blob/master/src/main/resources/db/mysql/petclinic_db_setup_mysql.txt
 
 ### 2.12 : Redémarrer l'application
 Redémarrer l'application PetClinic avec le bon profil afin que l'application puisse utiliser le serveur MySQL
