@@ -48,7 +48,7 @@ ssh azureuser@<public-ip>
 ```
 
 ### 2.4 : Installer les outils nécessaires
-Installer ensuite les outils nécessaires au démarrage de l'application
+Installer ensuite les outils nécessaires au démarrage de l'application. Il s'agit de ```git``` et ```java```
 > ⚠️  **WARNING**: Créez une issue s'intitulant `2.4` ayant pour contenu les commandes que vous avez effectuées
 
 ### 2.5 : Cloner le repo Spring PetClinic
