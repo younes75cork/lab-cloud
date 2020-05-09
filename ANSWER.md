@@ -9,6 +9,7 @@ Le réseau virtuel Azure (VNet) est le bloc de construction fondamental pour vot
 
 # 3.
 A quoi sert un NSG ?
+
 Le Network Security Group correspond aux matrices de flux celle-ci s’applique sur:
 Cartes réseaux/serveurs Base de données Passerelle VPN Sous réseau Tag/balise
 
