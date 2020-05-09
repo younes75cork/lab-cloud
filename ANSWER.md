@@ -49,12 +49,17 @@ Le canary release est un pattern qui permet de faire tester les dernières modif
 
 # 9.
 Comment changer de taille de machine virtuelle ?
-Avec une commande qui permet l'augmentation du disque dur:
+
+Deux possibilités en reglage direct ou en ligne de commande  permet l'augmentation du disque dur:
+
+- Ouvrez le gestionnaire de machine, selection le disque dur a modifier, et augmenter ça taille.
+
 - VBoxManage.exe modifyhd "D:\VirtualBox\Windows 10bis.vdi" --resize 2000. 
-Ici on augmente le disque dur de 200Go.
+  Ici on augmente le disque dur de 200Go.
 
 # 10.
 Qu'est-ce que le Blue/Green deployment ?
+
 Le Blue-Green Deployment et l’exposition progressive offrent encore plus de souplesse et réduisent de façon drastique le risque de bogue en production.
 Le principe de l’exposition progressive est assez simple : la nouvelle version de l’application est rendue disponible à un nombre restreint d’utilisateurs. Plus elle est stable et plus l’on est satisfait de sa réactivité, plus elle est accessible à un nombre important d’utilisateurs, jusqu’à une exposition complète à l’ensemble des utilisateurs.
 # 11.
